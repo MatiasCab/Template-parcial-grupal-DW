@@ -6,10 +6,14 @@ import { AppComponent } from './app.component';
 import { HttpClientModule } from '@angular/common/http';
 import { HttpClientInMemoryWebApiModule } from 'angular-in-memory-web-api';
 import { InMemoryDataService } from './in-memory-data.service';
+import { CarCardComponent } from './car-card/car-card.component';
+import { CarGridComponent } from './car-grid/car-grid.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    CarCardComponent,
+    CarGridComponent
   ],
   imports: [
     HttpClientModule,

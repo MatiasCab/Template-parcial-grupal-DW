@@ -1,0 +1,31 @@
+.card{
+    height: 100%;
+    width: 100%;
+
+    box-shadow: 0rem 0.2rem 0.5rem rgb(black, 0.4);
+
+    animation-name: card-init;
+    animation-duration: 0.5s;
+    animation-fill-mode: forwards;
+
+    &:hover {
+        box-shadow: 0rem 0.2rem 0.5rem black;
+        transition: all 0.2s ease-out;
+        transform: scale(1.1) translateY(0.5rem);
+        z-index: 10000
+    }
+}
+
+.card-img-top{
+    height: 30vh;
+    object-fit: cover;
+}
+
+@keyframes card-init {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
